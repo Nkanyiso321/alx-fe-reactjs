@@ -1,4 +1,4 @@
-import ProfilePage from './components/ProfilePage';
+import ProfilePage from './ProfilePage';
 import { UserContext } from './components/UserContext';
 
 

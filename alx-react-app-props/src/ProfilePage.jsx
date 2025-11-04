@@ -1,7 +1,7 @@
 import { useContext } from "react"
-import { UserContext } from './UserContext.js'
+import { UserContext } from './components/UserContext.js'
 
-import UserInfo from './UserInfo';
+import UserInfo from './components/UserInfo.jsx';
 
 // ["useContext", "UserContext", "react"] <--- Where is this one coming from
 
