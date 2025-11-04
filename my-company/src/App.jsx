@@ -11,7 +11,7 @@ function App() {
   return (
     <>
       <BrowserRouter>
-        <NavBar style={{ backgroundColor: 'navy', color: 'white', textAlign: 'center'}} />
+        <NavBar />
         <Routes>
           <Route path="/" element={<Home style={{ border: '1px solid gray', padding: '10px', margin: '10px' }} />} />
           <Route path="/about" element={<About style={{ border: '1px solid gray', padding: '10px', margin: '10px' }} />} />
