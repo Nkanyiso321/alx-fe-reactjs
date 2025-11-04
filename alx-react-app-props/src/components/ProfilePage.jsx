@@ -3,7 +3,7 @@ import { UserContext } from './UserContext.js'
 
 import UserInfo from './UserInfo';
 
-// userContext <--- Where is this one coming from
+// ["useContext", "UserContext", "react"] <--- Where is this one coming from
 
 function ProfilePage() {
   return <UserInfo />;
