@@ -1,18 +1,37 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import { Routes, Route, Link } from 'react-router-dom'
 import RecipeList from './components/RecipeList'
 import AddRecipeForm from './components/AddRecipeForm'
+import RecipeDetails from './components/RecipeDetail'
+import { useRecipeStore } from './components/recipeStore'
 
 
 function App() {
-  const [count, setCount] = useState(0)
+  const recipes = useRecipeStore(state => state.recipes);
 
   return (
     <>
-      <RecipeList />
-      <AddRecipeForm />
+      {/* {<RecipeList />} */}
+      {/* {<AddRecipeForm />} */}
+
+      <nav>
+        {recipes && recipes.map(recipe => (
+          <Link key={recipe.id} to={`/${recipe.id}`}>{recipe.title}</Link>
+        ))}
+      </nav>
+
+      <Routes>
+        <Route path="/" element={
+          <>
+            <h1>Home</h1>
+            <RecipeList />
+            <AddRecipeForm />
+          </>
+        } />
+        <Route path="/:recipeID" element={<RecipeDetails />} />
+        {/* 404 fallback */}
+        <Route path="*" element={<h2>Page Not Found</h2>} />
+      </Routes>
     </>
   )
 }
