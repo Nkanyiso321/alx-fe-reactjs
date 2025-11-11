@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { Routes, Route, Link } from 'react-router-dom'
+import { Router, Routes, Route, Link } from 'react-router-dom'
 import RecipeList from './components/RecipeList'
 import AddRecipeForm from './components/AddRecipeForm'
 import RecipeDetails from './components/RecipeDetail'
@@ -20,18 +20,20 @@ function App() {
         ))}
       </nav>
 
-      <Routes>
-        <Route path="/" element={
-          <>
-            <h1>Home</h1>
-            <RecipeList />
-            <AddRecipeForm />
-          </>
-        } />
-        <Route path="/:recipeID" element={<RecipeDetails />} />
-        {/* 404 fallback */}
-        <Route path="*" element={<h2>Page Not Found</h2>} />
-      </Routes>
+      <Router navigator={customHistory} location={customHistory.location}>
+        <Routes>
+          <Route path="/" element={
+            <>
+              <h1>Home</h1>
+              <RecipeList />
+              <AddRecipeForm />
+            </>
+          } />
+          <Route path="/:recipeID" element={<RecipeDetails />} />
+          {/* 404 fallback */}
+          <Route path="*" element={<h2>Page Not Found</h2>} />
+        </Routes>
+      </Router>
     </>
   )
 }
