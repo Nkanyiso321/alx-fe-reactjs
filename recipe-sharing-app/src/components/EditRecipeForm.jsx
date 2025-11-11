@@ -23,13 +23,15 @@ export default function EditRecipeForm({ recipeId }) {
 
     return (
         <>
+          <form onSubmit={handleUpdate}>
             <input type="text" value={title} onChange={handleTitleChange} placeholder="Title" />
             <br /><br />
             <input type="text" value={description} onChange={handleDescriptionChange} placeholder="Description" />
 
             <br />
             <br />
-            <button onClick={handleUpdate}>Update</button>
+            <button>Update</button>
+          </form>
         </>
     )
 }
