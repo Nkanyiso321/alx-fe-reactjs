@@ -1,6 +1,7 @@
 // RecipeDetails component
 import { useRecipeStore } from './recipeStore';
 import EditRecipeForm from './EditRecipeForm';
+import DeleteRecipeButton from './DeleteRecipeButton';
 import { useParams } from "react-router-dom";
 
 
@@ -8,13 +9,6 @@ const RecipeDetails = ({ recipeId }) => {
     const { recipeID } = useParams()
     console.log(recipeID)
     const recipe = useRecipeStore(state => state.recipes.find(recipe => recipe.id == recipeID));
-    const deleteRecipe = useRecipeStore(state => state.deleteRecipe);
-
-    const handlDelete = (event) => {
-        event.preventDefault()  
-        deleteRecipe(recipe);
-    };
-    console.log(recipe)
 
     return (
         <div>
@@ -24,7 +18,7 @@ const RecipeDetails = ({ recipeId }) => {
             <EditRecipeForm />
             <br />
             <br />
-            <button onClick={handlDelete}>Delete</button>
+            <DeleteRecipeButton recipeId={recipeId} />
         </div>
     );
 };
