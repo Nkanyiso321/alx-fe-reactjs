@@ -105,6 +105,7 @@ export default function Search() {
                 <p><strong>Followers:</strong> {user.followers}</p>
                 <p><strong>Public Repos:</strong> {user.public_repos}</p>
                 <p><strong>Number of Repos:</strong> {user.repos}</p>
+                <p><strong>Link:</strong> {user.html_url}</p>
             </div>
         ))}
         </>
