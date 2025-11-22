@@ -10,6 +10,8 @@ export default function Search() {
     const handleChange = (e) => setSearchValue(e.target.value)
     const handleSubmit = async (e) => {
 
+        e.preventDefault()
+
         setLoading(true);
         setError(false);
         setUserData(null);
@@ -45,7 +47,7 @@ export default function Search() {
         {/* CONDITIONAL RENDERING */}
         {loading && <p>Loading...</p>}
 
-        {error && <p>Looks like we can't find the user.</p>}
+        {error && <p>Looks like we cant find the user.</p>}
 
         {userData && (
             <div style={{ marginTop: "1rem" }}>
