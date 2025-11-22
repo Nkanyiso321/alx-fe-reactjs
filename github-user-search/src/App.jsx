@@ -1,11 +1,12 @@
 import { useState } from 'react'
 import { Routes, Route, Link } from "react-router-dom";
+import Home from './components/Home';
 
 import './App.css'
 
 function App() {
 
-  
+
   return (
     <>
      {/* Navigation */}
@@ -16,7 +17,7 @@ function App() {
 
        {/* Routes */}
       <Routes>
-        <Route path="/" element={<>Home</>} />
+        <Route path="/" element={<Home />} />
       </Routes>
       
     </>
