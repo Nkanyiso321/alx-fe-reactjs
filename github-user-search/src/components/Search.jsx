@@ -97,16 +97,16 @@ export default function Search() {
 
         {error && <p>Looks like we cant find the user.</p>}
 
-        {userData && (
-            <div style={{ marginTop: "1rem" }}>
-            <h3>{userData.name}</h3>
-            <img src={userData.avatar_url} alt="avatar" width="120" />
-            <p><strong>Username:</strong> {userData.login}</p>
-            <p><strong>Followers:</strong> {userData.followers}</p>
-            <p><strong>Public Repos:</strong> {userData.public_repos}</p>
-            <p><strong>Number of Repos:</strong> {userData.repos}</p>
+        {userData && userData.map(user => (
+            <div key={user.id} style={{ marginTop: "1rem" }}>
+                <h3>{user.name}</h3>
+                <img src={user.avatar_url} alt="avatar" width="120" />
+                <p><strong>Username:</strong> {user.login}</p>
+                <p><strong>Followers:</strong> {user.followers}</p>
+                <p><strong>Public Repos:</strong> {user.public_repos}</p>
+                <p><strong>Number of Repos:</strong> {user.repos}</p>
             </div>
-        )}
+        ))}
         </>
 
     )
