@@ -19,7 +19,6 @@ export default async function fetchUserData(username, location, minRepos) {
         return response.data.items;
     } 
     catch (error) {
-        console.error("GitHub Search Error:", error);
         throw error
     }
 }

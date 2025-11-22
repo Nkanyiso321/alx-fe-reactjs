@@ -20,7 +20,6 @@ export default function Search() {
 
         try {
             const result = await fetchUserData(searchValue, location, minRepos);
-            console.log(result)
             setUserData(result);
         } 
         catch (err) {
