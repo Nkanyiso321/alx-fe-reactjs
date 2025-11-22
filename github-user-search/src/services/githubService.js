@@ -10,7 +10,7 @@ export default async function fetchUserData(username, location, minRepos) {
     query = encodeURIComponent(query)
 
     try {
-        const response = await axios.get(`https://api.github.com/users?q=${query}`, {
+        const response = await axios.get(`https://api.github.com/search/users?q=${query}`, {
             headers: {
                 Authorization: `Bearer ${import.meta.env.VITE_APP_GITHUB_API_KEY}`
             }
