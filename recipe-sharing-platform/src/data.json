@@ -3,60 +3,120 @@
     "id": 1,
     "title": "Spaghetti Carbonara",
     "summary": "A classic Italian pasta dish with eggs, cheese, bacon, and black pepper.",
-    "image": "https://images.unsplash.com/photo-1588013273468-315fd88ea34c?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80",
+    "image": "https://images.unsplash.com/photo-1588013273468-315fd88ea34c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80",
     "cookTime": "20 mins",
+    "prepTime": "10 mins",
+    "totalTime": "30 mins",
     "difficulty": "Medium",
     "rating": 4.8,
-    "category": "Italian"
+    "category": "Italian",
+    "servings": 4,
+    "author": "Maria Rossi",
+    "authorAvatar": "https://images.unsplash.com/photo-1494790108755-2616b612b786?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&q=80",
+    "calories": 650,
+    "ingredients": [
+      "400g spaghetti",
+      "200g pancetta or guanciale, diced",
+      "3 large eggs",
+      "100g Pecorino Romano cheese, grated",
+      "100g Parmesan cheese, grated",
+      "3 cloves garlic, minced",
+      "Freshly ground black pepper",
+      "Salt to taste",
+      "Fresh parsley for garnish"
+    ],
+    "instructions": [
+      "Bring a large pot of salted water to boil. Add spaghetti and cook according to package instructions.",
+      "While pasta cooks, heat a large pan over medium heat. Add diced pancetta and cook until crispy (5-7 minutes). Add garlic and cook for 1 minute more.",
+      "In a medium bowl, whisk together eggs, grated cheeses, and a generous amount of black pepper.",
+      "Drain spaghetti, reserving 1 cup of pasta water.",
+      "Add hot spaghetti to the pan with pancetta. Remove from heat.",
+      "Quickly pour egg mixture over pasta, tossing vigorously. Add pasta water as needed to create a creamy sauce.",
+      "Serve immediately with extra cheese and pepper."
+    ],
+    "nutrition": {
+      "calories": 650,
+      "protein": "32g",
+      "carbs": "75g",
+      "fat": "24g",
+      "fiber": "3g"
+    },
+    "tags": ["pasta", "italian", "quick", "dinner"],
+    "reviews": [
+      {
+        "id": 1,
+        "user": "John D.",
+        "rating": 5,
+        "comment": "Absolutely delicious! Followed the recipe exactly and it turned out perfect.",
+        "date": "2024-01-15"
+      },
+      {
+        "id": 2,
+        "user": "Sarah M.",
+        "rating": 4,
+        "comment": "Great recipe! Made it for date night and my partner loved it.",
+        "date": "2024-01-10"
+      }
+    ],
+    "similarRecipes": [2, 3]
   },
   {
     "id": 2,
     "title": "Chicken Tikka Masala",
     "summary": "Chunks of grilled chicken (tikka) cooked in a smooth buttery & creamy tomato based gravy.",
-    "image": "https://images.unsplash.com/photo-1601050690597-df0568f70950?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80",
+    "image": "https://images.unsplash.com/photo-1601050690597-df0568f70950?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80",
     "cookTime": "45 mins",
+    "prepTime": "20 mins",
+    "totalTime": "65 mins",
     "difficulty": "Intermediate",
     "rating": 4.9,
-    "category": "Indian"
-  },
-  {
-    "id": 3,
-    "title": "Beef Tacos",
-    "summary": "Crispy tortillas filled with seasoned beef, fresh veggies, and tangy salsa.",
-    "image": "https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80",
-    "cookTime": "25 mins",
-    "difficulty": "Easy",
-    "rating": 4.5,
-    "category": "Mexican"
-  },
-  {
-    "id": 4,
-    "title": "Vegetable Stir Fry",
-    "summary": "Colorful vegetables sautéed in a savory sauce with tofu or chicken.",
-    "image": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80",
-    "cookTime": "15 mins",
-    "difficulty": "Easy",
-    "rating": 4.3,
-    "category": "Asian"
-  },
-  {
-    "id": 5,
-    "title": "Chocolate Lava Cake",
-    "summary": "Decadent chocolate cake with a gooey molten center, perfect for dessert lovers.",
-    "image": "https://images.unsplash.com/photo-1606313564200-75f2d4fa383b?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80",
-    "cookTime": "30 mins",
-    "difficulty": "Medium",
-    "rating": 4.9,
-    "category": "Dessert"
-  },
-  {
-    "id": 6,
-    "title": "Greek Salad",
-    "summary": "Fresh cucumbers, tomatoes, olives, and feta cheese with olive oil dressing.",
-    "image": "https://images.unsplash.com/photo-1540189549336-e6e99c3679fe?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80",
-    "cookTime": "10 mins",
-    "difficulty": "Easy",
-    "rating": 4.4,
-    "category": "Mediterranean"
+    "category": "Indian",
+    "servings": 6,
+    "author": "Raj Patel",
+    "authorAvatar": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&q=80",
+    "calories": 480,
+    "ingredients": [
+      "1 kg boneless chicken, cubed",
+      "1 cup yogurt",
+      "2 tbsp ginger-garlic paste",
+      "2 tbsp lemon juice",
+      "2 tsp garam masala",
+      "1 tsp turmeric powder",
+      "1 tsp chili powder",
+      "2 tbsp oil",
+      "2 onions, finely chopped",
+      "4 tomatoes, pureed",
+      "1 cup cream",
+      "2 tbsp butter",
+      "Fresh coriander for garnish",
+      "Salt to taste"
+    ],
+    "instructions": [
+      "Marinate chicken with yogurt, ginger-garlic paste, lemon juice, and spices for at least 2 hours.",
+      "Grill or pan-fry chicken until cooked through and slightly charred.",
+      "In a separate pan, heat oil and sauté onions until golden brown.",
+      "Add tomato puree and cook until oil separates from the mixture.",
+      "Add cream and butter, simmer for 10 minutes.",
+      "Add grilled chicken to the sauce and cook for another 5 minutes.",
+      "Garnish with fresh coriander and serve with naan or rice."
+    ],
+    "nutrition": {
+      "calories": 480,
+      "protein": "42g",
+      "carbs": "18g",
+      "fat": "28g",
+      "fiber": "4g"
+    },
+    "tags": ["chicken", "indian", "curry", "spicy"],
+    "reviews": [
+      {
+        "id": 1,
+        "user": "Lisa K.",
+        "rating": 5,
+        "comment": "Best chicken tikka masala I've ever made! Restaurant quality at home.",
+        "date": "2024-01-20"
+      }
+    ],
+    "similarRecipes": [1, 4]
   }
 ]
