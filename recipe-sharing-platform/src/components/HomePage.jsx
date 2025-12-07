@@ -15,7 +15,7 @@ const HomePage = () => {
       try {
         setLoading(true);
         // In a real app, this would be an API call
-        const response = await fetch('/data/recipes.json');
+        const response = await fetch('../data.json');
         const data = await response.json();
         setRecipes(data);
         setFilteredRecipes(data);
