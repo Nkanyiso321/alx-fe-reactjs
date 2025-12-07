@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { Plus } from 'lucide-react';
 import { Link } from 'react-router-dom'
 import RecipeCard from './RecipeCard';
 import { Search, Filter, Flame, Clock, TrendingUp, Users } from 'lucide-react';
@@ -67,6 +68,18 @@ const HomePage = () => {
             <p className="text-xl md:text-2xl text-white/90 mb-8 max-w-3xl mx-auto">
               From traditional classics to modern favorites - find the perfect recipe for every occasion
             </p>
+
+             {/* Add Recipe Button */}
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                <Link
+                to="/add-recipe"
+                className="inline-flex items-center justify-center px-8 py-3 bg-white text-primary-600 font-semibold rounded-lg hover:bg-gray-100 transition-colors"
+                >
+                <Plus className="w-5 h-5 mr-2" />
+                Share Your Recipe
+                </Link>
+                {/* ... other buttons */}
+            </div>
             
             {/* Search Bar */}
             <div className="max-w-2xl mx-auto">
@@ -87,6 +100,19 @@ const HomePage = () => {
           </div>
         </div>
       </div>
+
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
+        <div className="flex justify-between items-center">
+            <h1 className="text-2xl font-bold text-gray-900">Recipe Sharing Platform</h1>
+            <Link
+            to="/add-recipe"
+            className="inline-flex items-center px-4 py-2 bg-primary-500 text-white font-semibold rounded-lg hover:bg-primary-600 transition-colors"
+            >
+            <Plus className="w-5 h-5 mr-2" />
+            Add Recipe
+            </Link>
+        </div>
+    </div>
 
       {/* Stats Section */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 -mt-8 md:-mt-12 relative z-10">
