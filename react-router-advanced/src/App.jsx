@@ -9,7 +9,7 @@ import Home from './pages/Home';
 import About from './pages/About';
 import Posts from './pages/Posts';
 import PostDetail from './pages/PostDetail';
-import Profile from './pages/Profile';
+import Profile from './components/Profile';
 import Login from './pages/Login';
 import Dashboard from './pages/Dashboard';
 import NotFound from './pages/NotFound';
